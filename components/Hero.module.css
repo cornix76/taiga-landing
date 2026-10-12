@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('/hero-bg.jpg') center/cover no-repeat;
+}
+.overlay {
+  position: absolute; inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.content { position: relative; z-index: 2; padding: 0 20px; }
+.title {
+  font-size: clamp(4rem, 15vw, 12rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.subtitle { font-size: 1rem; margin: 16px 0 32px; letter-spacing: 1px; }
+.cta {
+  padding: 14px 32px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+.cta:hover { background: #fff; color: #000; }

@@ -1,0 +1,17 @@
+.header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  color: #fff;
+}
+.logo { display: flex; align-items: center; gap: 8px; font-weight: 700; letter-spacing: 2px; }
+.icon { font-size: 1.5rem; }
+.burger { background: none; border: none; display: flex; flex-direction: column; gap: 5px; }
+.burger span { width: 26px; height: 2px; background: #fff; display: block; }
+@media (max-width: 768px) {
+  .header { padding: 16px 20px; }
+}
